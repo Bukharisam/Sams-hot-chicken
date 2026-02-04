@@ -1,0 +1,11 @@
+/* Global app styles (small set) */
+
+:root {
+  --nav-height: 88px; /* increased for more comfortable header height */
+  --nav-spacing: 24px; /* extra gap between nav and main */
+}
+
+/* Reserve space for the fixed top navigation */
+body {
+  padding-top: calc(var(--nav-height) + var(--nav-spacing));
+}

@@ -1,0 +1,126 @@
+nav {
+  /* keep visuals identical but anchor height to the global variable */
+  background:
+    radial-gradient(
+      circle at 20% 20%,
+      rgba(255, 60, 60, 0.08) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 80% 80%,
+      rgba(60, 100, 255, 0.08) 0%,
+      transparent 50%
+    ),
+    linear-gradient(135deg, #0d0614 0%, #0a0c0f 50%, #050d0f 100%);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 22px; /* increased vertical padding for larger header */
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  min-height: var(--nav-height);
+}
+
+.logo-style {
+  border-radius: 50%;
+  /* keep logo proportional to the nav height — increased slightly */
+  max-height: calc(var(--nav-height) - 16px);
+  width: auto;
+}
+
+.middle-nav {
+  display: flex;
+  align-items: center;
+  gap: 44px; /* increased slightly to suit larger header */
+  background-color:
+    radial-gradient(
+      circle at 20% 20%,
+      rgba(255, 60, 60, 0.1) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 80% 80%,
+      rgba(60, 100, 255, 0.1) 0%,
+      transparent 50%
+    ),
+    linear-gradient(135deg, #1a0a1f 0%, #0f1419 50%, #0a1a1f 100%);
+  padding: 18px 14px;
+  border: solid 1px rgba(255, 245, 245, 0.846);
+  border-radius: 35px;
+}
+
+.order-now-style {
+  background-color: red;
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 16px 35px;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+}
+
+.order-now-style:hover {
+  background-color: darkred;
+}
+
+.left-nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.right-nav {
+  display: flex;
+  align-items: center;
+  margin-left: 300px;
+  margin-right: 200px;
+}
+
+.left-nav h1 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.middle-nav {
+  display: flex;
+  align-items: center;
+  gap: 36px; /* reduced to better fit slimmer header */
+  background-color:
+    radial-gradient(
+      circle at 20% 20%,
+      rgba(255, 60, 60, 0.1) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 80% 80%,
+      rgba(60, 100, 255, 0.1) 0%,
+      transparent 50%
+    ),
+    linear-gradient(135deg, #1a0a1f 0%, #0f1419 50%, #0a1a1f 100%);
+  padding: 14px 12px;
+  border: solid 1px rgba(255, 245, 245, 0.846);
+  border-radius: 35px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+.nav-link:hover {
+  color: #ff6347;
+}
