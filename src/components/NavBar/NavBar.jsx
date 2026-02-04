@@ -14,7 +14,9 @@ export default function NavBar() {
             height="110"
           />
         </Link>
-        <h1>Sam's Hot Chicken</h1>
+        <h1>
+          Sam's <span className="logo-name-highlight"> Hot </span> Chicken
+        </h1>
       </div>
 
       <div className="middle-nav">
@@ -33,6 +35,7 @@ export default function NavBar() {
         <button type="button" className="order-now-style">
           Order Now
         </button>
+        <button className="login-button"> Login </button>
       </div>
     </nav>
   );

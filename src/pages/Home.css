@@ -254,3 +254,16 @@ body {
   font-size: 50px;
   color: white;
 }
+
+.login-button {
+  background-color: white;
+  color: red;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 16px 35px;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+}
