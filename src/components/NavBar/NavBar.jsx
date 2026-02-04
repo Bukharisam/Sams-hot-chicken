@@ -29,6 +29,12 @@ export default function NavBar() {
         <Link className="nav-link" to="/checkout">
           Checkout
         </Link>
+        <Link className="nav-link" to="/location">
+          Location
+        </Link>
+        <Link className="nav-link" to="/about">
+          About US
+        </Link>
       </div>
 
       <div className="right-nav">

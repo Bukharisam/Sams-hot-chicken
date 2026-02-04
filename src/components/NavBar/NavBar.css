@@ -35,42 +35,64 @@ nav {
   width: auto;
 }
 
-.middle-nav {
-  display: flex;
-  align-items: center;
-  gap: 44px; /* increased slightly to suit larger header */
-  background-color:
-    radial-gradient(
-      circle at 20% 20%,
-      rgba(255, 60, 60, 0.1) 0%,
-      transparent 50%
-    ),
-    radial-gradient(
-      circle at 80% 80%,
-      rgba(60, 100, 255, 0.1) 0%,
-      transparent 50%
-    ),
-    linear-gradient(135deg, #1a0a1f 0%, #0f1419 50%, #0a1a1f 100%);
-  padding: 18px 14px;
-  border: solid 1px rgba(255, 245, 245, 0.846);
-  border-radius: 35px;
-}
-
 .order-now-style {
   background-color: red;
   color: white;
   font-weight: 700;
   font-size: 18px;
-  padding: 16px 35px;
+  padding: 12px 28px;
   border: none;
   border-radius: 16px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.25s ease;
   white-space: nowrap;
+  box-shadow: 0 4px 12px rgba(255, 0, 0, 0.3);
 }
 
 .order-now-style:hover {
-  background-color: darkred;
+  background-color: #e63946;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(255, 0, 0, 0.5);
+}
+
+.order-now-style:active {
+  transform: translateY(-1px) scale(0.98);
+  box-shadow: 0 2px 8px rgba(255, 0, 0, 0.4);
+}
+
+.order-now-style:focus {
+  outline: 3px solid rgba(255, 100, 100, 0.6);
+  outline-offset: 2px;
+}
+
+.login-button {
+  background-color: white;
+  color: #ff6347;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  white-space: nowrap;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+}
+
+.login-button:hover {
+  background-color: rgba(255, 255, 255, 0.95);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(255, 255, 255, 0.3);
+}
+
+.login-button:active {
+  transform: translateY(-1px) scale(0.98);
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.2);
+}
+
+.login-button:focus {
+  outline: 2px solid #ff6347;
+  outline-offset: 2px;
 }
 
 .left-nav {
@@ -90,14 +112,20 @@ nav {
 }
 
 .left-nav h1 {
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 700;
+  white-space: nowrap;
+  margin: 0;
+}
+
+.logo-name-highlight {
+  color: #ff6347; /* Orange highlight for "Hot" */
 }
 
 .middle-nav {
   display: flex;
   align-items: center;
-  gap: 36px; /* reduced to better fit slimmer header */
+  gap: 44px;
   background-color:
     radial-gradient(
       circle at 20% 20%,
@@ -110,7 +138,7 @@ nav {
       transparent 50%
     ),
     linear-gradient(135deg, #1a0a1f 0%, #0f1419 50%, #0a1a1f 100%);
-  padding: 14px 20px;
+  padding: 12px 20px;
   border: solid 1px rgba(255, 245, 245, 0.846);
   border-radius: 35px;
 }
@@ -121,11 +149,8 @@ nav {
   font-size: 18px;
   font-weight: 700;
   transition: color 0.3s ease;
+  white-space: nowrap;
 }
 .nav-link:hover {
   color: #ff6347;
-}
-
-.logo-name-highlight {
-  color: #ff6347; /* Highlight color for "Hot" in the logo */
 }
