@@ -9,7 +9,7 @@ export const productsData = [
     id: crypto.randomUUID(),
     name: "2 SLIDES N SIDE",
     price: "$15.99",
-    image: "",
+    image: "/images/chicken-sandwich.jpeg",
   },
   {
     id: crypto.randomUUID(),
@@ -21,7 +21,7 @@ export const productsData = [
     id: crypto.randomUUID(),
     name: "SIGNATURE LOADED FRIES",
     price: "$11.99",
-    image: "",
+    image: "/images/loaded-fries.jpeg",
   },
   {
     id: crypto.randomUUID(),
@@ -45,7 +45,7 @@ export const productsData = [
     id: crypto.randomUUID(),
     name: "SINGLE SLIDE",
     price: "$5.99",
-    image: "",
+    image: "/images/Featured-items.jpeg",
   },
   {
     id: crypto.randomUUID(),

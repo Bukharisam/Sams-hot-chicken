@@ -1,7 +1,7 @@
 import Home from "./pages/Home";
 import Menu from "./pages/Menu";
 import Cart from "./pages/Cart";
-import Checkout from "./pages/Checkout";
+import Checkout from "./pages/Checkout.jsx";
 import Location from "./pages/Location";
 import AboutUs from "./pages/AboutUS";
 import Reviews from "./pages/Reviews";
@@ -11,6 +11,7 @@ import AdminDashboard from "./pages/admin/AdminDashboard";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import NavBar from "./components/NavBar";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path="/admin/login" element={<AdminLogin />} />
         <Route path="/admin/dashboard" element={<AdminDashboard />} />
       </Routes>
+      <Footer />
     </>
   );
 }

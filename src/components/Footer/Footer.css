@@ -1,0 +1,140 @@
+.footer {
+  background:
+    radial-gradient(
+      circle at 20% 20%,
+      rgba(255, 60, 60, 0.08) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 80% 80%,
+      rgba(60, 100, 255, 0.08) 0%,
+      transparent 50%
+    ),
+    linear-gradient(135deg, #0d0614 0%, #0a0c0f 50%, #050d0f 100%);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+  padding: 40px 40px 15px;
+  margin-top: 80px;
+}
+
+.footer-container {
+  max-width: 1600px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-section:first-child {
+  margin-right: auto;
+  margin-left: -50px;
+}
+
+.footer-section h4 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #ff5722;
+  margin: 0;
+}
+
+.footer-logo-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.footer-logo-link:hover {
+  transform: translateY(-3px);
+}
+
+.footer-logo-link h3 {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0;
+  color: white;
+  text-align: center;
+}
+
+.footer-logo {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.footer-link {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  padding: 8px 0;
+}
+
+.footer-link:hover {
+  color: #ff5722;
+  transform: translateX(4px);
+}
+
+.footer-contact {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 18px;
+  margin: 0;
+}
+
+.social-links,
+.delivery-links,
+.site-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-icon {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 20px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 12px;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer {
+    padding: 40px 20px 15px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .footer-section h4 {
+    font-size: 16px;
+  }
+}

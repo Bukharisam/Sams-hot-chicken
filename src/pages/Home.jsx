@@ -40,24 +40,66 @@ export default function Home() {
             />
             <div className="contact-info">
               <a
-                href="https://instagram.com/samshotchicken"
+                href="https://instagram.com/samshotchickenog"
                 className="contact-link"
               >
-                📷 @samshotchicken
+                <img
+                  src="/images/instagram-1-svgrepo-com.svg"
+                  alt="Instagram"
+                  className="contact-icon"
+                />
+                samshotchickenog
               </a>
-              <a href="mailto:info@samshotchicken.com" className="contact-link">
-                ✉️ info@samshotchicken.com
+              <a
+                href="mailto:samshotchicken@gmail.com"
+                className="contact-link"
+              >
+                <img
+                  src="/images/gmail-old-svgrepo-com.svg"
+                  alt="Gmail"
+                  className="contact-icon"
+                />
+                samshotchicken@gmail.com
               </a>
               <a href="tel:347-677-5603" className="contact-link">
-                📞 347-677-5603
+                <img
+                  src="/images/phone-out-svgrepo-com.svg"
+                  alt="Phone"
+                  className="contact-icon"
+                />
+                347-677-5603
               </a>
             </div>
           </div>
         </div>
 
         <div className="product-grid">
-          <p> stringgggggg </p>
+          <div className="product-context">
+            <p className="featured-items-title"> Featured Items </p>
+            <button className="view-full-menu-button">View Full Menu</button>
+          </div>
+
+          <div className="featured-items-description-container">
+            <p>trending items thats offered at Sam's Hot Chicken</p>
+          </div>
         </div>
+
+        <section className="featured-items-section">
+          <div className="featured-item-card">
+            <p className="featured-item-name"></p>
+            <p className="featured-item-price"></p>
+          </div>
+
+          <div className="featured-item-card">
+            <p className="featured-item-name"></p>
+            <p className="featured-item-price"></p>
+          </div>
+
+          <div className="featured-item-card">
+            <p className="featured-item-name"></p>
+            <p className="featured-item-price"></p>
+          </div>
+        </section>
       </main>
     </>
   );
