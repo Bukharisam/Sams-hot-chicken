@@ -1,4 +1,4 @@
-import Home from "./pages/Home";
+import Home from "./pages/Home"; // done styling this, just need to add image.
 import Menu from "./pages/Menu";
 import Cart from "./pages/Cart";
 import Checkout from "./pages/Checkout.jsx";
