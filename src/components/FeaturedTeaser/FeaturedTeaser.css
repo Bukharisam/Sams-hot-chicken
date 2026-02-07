@@ -1,0 +1,52 @@
+.product-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  height: auto;
+  width: 100%;
+  background: transparent;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 50px;
+  color: white;
+  margin-top: -80px;
+}
+
+.product-context {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.view-full-menu-button {
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 18px 40px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-right: 80px;
+}
+
+.featured-items-title {
+  margin-left: 80px;
+}
+
+.featured-items-description-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 80px;
+}
+
+.featured-items-description-container p {
+  max-width: 400px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 18px;
+  line-height: 1.4;
+  margin: 0;
+}

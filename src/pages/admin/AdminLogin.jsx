@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./AdminLogin.css";
 
 function AdminLogin() {
   const [email, setEmail] = useState("");
@@ -11,9 +12,9 @@ function AdminLogin() {
   };
 
   const validatePassword = (password) => {
-    // At least 8 chars, 1 uppercase, 1 lowercase, 1 number, 1 special char
+    // At least 16 chars, 1 uppercase, 1 lowercase, 1 number, 1 special char
     const regex =
-      /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+      /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{16,}$/;
     return regex.test(password);
   };
 
@@ -40,8 +41,8 @@ function AdminLogin() {
       return;
     }
 
-    if (password.length < 8) {
-      setError("Password must be at least 8 characters");
+    if (password.length < 16) {
+      setError("Password must be at least 16 characters");
       return;
     }
 
@@ -57,27 +58,29 @@ function AdminLogin() {
   };
 
   return (
-    <>
-      {error && <p style={{ color: "red" }}>{error}</p>}
+    <div className="admin-login-page">
+      <div className="admin-login-card">
+        {error && <p className="admin-login-error">{error}</p>}
 
-      <form onSubmit={handleSubmit}>
-        <input
-          type="email"
-          placeholder="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
+        <form onSubmit={handleSubmit} className="admin-login-form">
+          <input
+            type="email"
+            placeholder="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
 
-        <input
-          type="password"
-          placeholder="password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
+          <input
+            type="password"
+            placeholder="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
 
-        <button type="submit">Login</button>
-      </form>
-    </>
+          <button type="submit">Login</button>
+        </form>
+      </div>
+    </div>
   );
 }
 
