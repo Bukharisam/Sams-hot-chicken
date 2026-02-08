@@ -30,6 +30,16 @@
   cursor: pointer;
   transition: all 0.3s ease;
   margin-right: 80px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.view-full-menu-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.8);
+  transform: translateY(-2px);
 }
 
 .featured-items-title {

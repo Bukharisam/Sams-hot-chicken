@@ -25,7 +25,9 @@ export default function HeroSection() {
 
         <div className="hero-buttons">
           <button className="view-menu-button">View Menu</button>
-          <button className="learn-more-button">Find Us</button>
+          <a href="#footer-section" className="learn-more-button">
+            Find Us
+          </a>
         </div>
       </div>
 

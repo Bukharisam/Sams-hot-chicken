@@ -3,7 +3,7 @@ import "./Footer.css";
 
 export default function Footer() {
   return (
-    <footer className="footer">
+    <footer className="footer" id="footer-section">
       <div className="footer-container">
         {/* Left Section - Logo & Name */}
         <div className="footer-section">
